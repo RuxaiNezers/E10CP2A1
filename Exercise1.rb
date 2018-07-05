@@ -18,6 +18,4 @@ class Alumno
   end
 end
 
-
-
 print Alumno.read_file()
