@@ -18,10 +18,7 @@ class Rectangulo
   def lado
   	puts "su rectangulo mide de base: #{@base} y de altura: #{@altura}"
   end
-
-  def perimetros
-  	perimetro(@base,@altura)
-  end
+  
 end
 
 class Cuadrado
@@ -34,16 +31,12 @@ class Cuadrado
   	puts "Los lados de su cuadrado miden: #{lado} cada uno"
   end
 
-  def perimetros
-  	perimetro(@lado,@lado)
-  end
-
 end
 
 cuadradoA = Cuadrado.new(5)
-puts cuadradoA.perimetros
+puts cuadradoA.perimetro(5,5)
 puts cuadradoA.area(5,5)
 
 rectanguloA = Rectangulo.new(3,6)
-puts rectanguloA.perimetros
+puts rectanguloA.perimetro(3,6)
 puts rectanguloA.area(3,6)
